@@ -4,8 +4,14 @@ chrome.browserAction.onClicked.addListener(function(tab) {
         var activeTab = tabs[0];
         chrome.tabs.sendMessage(activeTab.id, {"message": "clicked_browser_action"});
     });
-});
 
+    //chrome.tabs.executeScript({
+    //    code: 'document.body.style.backgroundColor="red"'
+    //});
+
+    chrome.tabs.executeScript(null, {file: "js/content_script/newContent.js"});
+
+});
 
 chrome.extension.onMessage.addListener(function(message,sender,sendResponse){
     if(message.text == "getStuff"){
@@ -17,6 +23,4 @@ chrome.extension.onMessage.addListener(function(message,sender,sendResponse){
         // Notify that we saved.
         console.log('Settings saved',message.url);
     });
-
-
 });

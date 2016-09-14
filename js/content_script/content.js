@@ -20,7 +20,6 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
-
 chrome.extension.sendMessage({text:"getStuff",url:url},function(reponse){
     //This is where the stuff you want from the background page will be
     if(reponse.type == "test")
