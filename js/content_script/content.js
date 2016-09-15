@@ -26,6 +26,6 @@ chrome.extension.sendMessage({text:"getStuff",url:url},function(reponse){
         console.log("Test received",reponse.value);
 });
 
-chrome.storage.sync.get(['valueStored'], function(items) {
+chrome.storage.local.get(['valueStored'], function(items) {
     console.log('Settings retrieved', items);
 });

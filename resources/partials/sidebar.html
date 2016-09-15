@@ -1,0 +1,240 @@
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+<div class="cd-ext-browser-extension-container cd-ext-div" id="cd-ext-slider">
+<div class="cd-ext-notify cd-ext-hide cd-ext-div">
+    <div class="cd-ext-notify-wrapper cd-ext-div">
+        <img class="cd-ext-img" src={{tick_icon}}>
+        <p class=" cd-ext-notify-text cd-ext-p"></p>
+    </div>
+</div>
+<img class="cd-ext-btn-sticky cd-ext-img" src={{cdStickyNote}}>
+    <!-- <div class="cd-ext-extension-close cd-ext-div"> <span class="cd-ext-span"></span> </div> -->
+    <div class="cd-ext-extension-header cd-ext-div">
+        <a class="cd-ext-a" href="http://www.coupondunia.in/">
+            <div class="cd-ext-cd-logo cd-ext-div">
+                <img class=" cd-ext-img" src={{header_logo}}>
+            </div>
+        </a>
+       
+        <!--
+        <input type=search placeholder="SEARCH" class="extension-search cd-ext-input" autocomplete="off" spellcheck="false" autocorrect="off">
+        <i class="fa fa-search ext-search cd-ext-i"></i>
+        -->
+        <div class="cd-ext-logged-in-header cd-ext-hide cd-ext-div">
+            <div class="cd-ext-ext-user-block cd-ext-div">
+                <img class="cd-ext-user-icon cd-ext-img" src={{default_user_icon}}>
+                <img class="cd-ext-ext-user cd-ext-img" src={{user_triangle}}>
+            </div>
+            <div class="cd-ext-ext-settings cd-ext-btn-disabled cd-ext-div">
+                <img class="cd-ext-img" src={{settings_icon}}>
+                <span class="cd-ext-tooltiptext">Please sign in to manage notification settings</span>
+            </div>
+        </div>
+
+        <div class="cd-ext-logged-out-header cd-ext-div">
+            <p class="cd-ext-login-label cd-ext-p">Log In/Sign Up</p>
+        </div>
+
+        <div class="cd-ext-div">
+            <img class="cd-ext-extension-close cd-ext-img" src={{cross_icon}}>
+        </div>
+        
+
+    </div>
+    <div class="cd-ext-extension-tabs-container cd-ext-div">
+        <p class="cd-ext-merchant-tab cd-ext-active cd-ext-tab cd-ext-p" id="cd-ext-savings">{{vendorNameTruncated}} Savings</p>
+        <p class="cd-ext-offers-tab cd-ext-tab cd-ext-p">Top Deals</p>
+        <p class="cd-ext-notification-tab cd-ext-tab cd-ext-p">Notifications
+            <span id="cdext-num-unread-notifs" class="cd-ext-ext-not cd-ext-span cd-ext-dot-class"></span>
+        </p>
+    </div>
+
+
+    <!-- 1st tab-->
+    <div class="cd-ext-extension-tab-content cd-ext-merchant-tab-section cd-ext-div cd-ext-show">
+        <div class="cd-ext-ext-sub-tabs cd-ext-div">
+            <p class="cd-ext-merchant-offer-tab cd-ext-active cd-ext-sub-tab cd-ext-p">{{vendorName}} Offers</p>
+            <p class="cd-ext-price-compare-tab cd-ext-sub-tab cd-ext-p" id="cd-ext-pc">Price Comparison</p>
+        </div>
+
+        <!-- offer -->
+        <div id="cdext-merchant_offer-data-container" class="cd-ext-ext-sub-content cd-ext-merchant-offer-tab-section cd-ext-div cd-ext-show">
+            <div class="cd-ext-loader-big cd-ext-div">
+                <div class="sk-folding-cube cd-ext-div">
+                  <div class="sk-cube1 sk-cube cd-ext-div"></div>
+                  <div class="sk-cube2 sk-cube cd-ext-div"></div>
+                  <div class="sk-cube4 sk-cube cd-ext-div"></div>
+                  <div class="sk-cube3 sk-cube cd-ext-div"></div>
+                </div>
+            </div>  
+        </div>
+        <!-- offer -->
+
+        
+        <div id="cdext-price-comparision-data-container" class="cd-ext-price-compare-tab-section cd-ext-div cd-ext-hide">  
+            <div class="cd-ext-loader-big cd-ext-div">
+                <div class="sk-folding-cube cd-ext-div">
+                  <div class="sk-cube1 sk-cube cd-ext-div"></div>
+                  <div class="sk-cube2 sk-cube cd-ext-div"></div>
+                  <div class="sk-cube4 sk-cube cd-ext-div"></div>
+                  <div class="sk-cube3 sk-cube cd-ext-div"></div>
+                </div>
+            </div>                    
+        </div> 
+        
+
+    </div>
+    <!-- 1ST END -->
+
+    <!-- 2nd tab TOP OFFERS -->
+    
+    <div id="cdext-top-deals-and-offers-container" class="cd-ext-top-offers-content cd-ext-hide cd-ext-offers-tab-section cd-ext-div">
+         <div class="cd-ext-loader-big cd-ext-div">
+            <div class="sk-folding-cube cd-ext-div">
+              <div class="sk-cube1 sk-cube cd-ext-div"></div>
+              <div class="sk-cube2 sk-cube cd-ext-div"></div>
+              <div class="sk-cube4 sk-cube cd-ext-div"></div>
+              <div class="sk-cube3 sk-cube cd-ext-div"></div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- END TOP OFFERS -->
+
+    <!-- 3rd tab Notification section -->
+
+    <div class="cd-ext-notification-tab-content cd-ext-notification-tab-section cd-ext-div cd-ext-hide">
+        <div class="cd-ext-not-sub-tabs cd-ext-div">
+            <p class="cd-ext-special-offer-tab cd-ext-sub-tab cd-ext-div cd-ext-active cd-ext-p">Special Offers</p>
+            <p class="cd-ext-user-activity-tab cd-ext-sub-tab cd-ext-div cd-ext-p">User Activity</p>
+        </div>
+        
+        <!-- Special offer section -->
+
+        <div id = "cdext-special_offers-container" class="cd-ext-special-offers-content cd-ext-special-offer-tab-section cd-ext-div cd-ext-show"> 
+            <div class="cd-ext-loader-big cd-ext-div">
+                <div class="sk-folding-cube cd-ext-div">
+                  <div class="sk-cube1 sk-cube cd-ext-div"></div>
+                  <div class="sk-cube2 sk-cube cd-ext-div"></div>
+                  <div class="sk-cube4 sk-cube cd-ext-div"></div>
+                  <div class="sk-cube3 sk-cube cd-ext-div"></div>
+                </div>
+            </div>  
+            <!-- This data moved to tab_special_offers.html -->
+        </div>
+                <!-- end -->
+
+        <!-- Special offer section -->
+
+        <!-- user activity section -->
+
+        <div class="cd-ext-user-activity-content cd-ext-user-activity-tab-section cd-ext-div cd-ext-hide" id="cd-ext-user-notifications">
+            <!-- If not logged in -->
+            <div class="cd-ext-login-message cd-ext-div cd-ext-hide">
+                <div>To view your activity.</div>
+                <div>Sign Up/log In to Coupondunia.</div>
+
+                <div class="cd-ext-user-login cd-ext-div">Log In</div>
+                <div class="cd-ext-user-signup cd-ext-div">Sign Up</div>
+            </div>
+            <!-- end -->
+            
+            <div id = "cdext-product-notification-container">
+                <!-- <img class="cd-ext-loader-big" src={{big_loader}}> -->
+            </div>
+            <div id = "cdext-cashback-notification-container">
+                <div id="user-activity-loader" class="cd-ext-loader-big cd-ext-div">
+                    <div class="sk-folding-cube cd-ext-div">
+                      <div class="sk-cube1 sk-cube cd-ext-div"></div>
+                      <div class="sk-cube2 sk-cube cd-ext-div"></div>
+                      <div class="sk-cube4 sk-cube cd-ext-div"></div>
+                      <div class="sk-cube3 sk-cube cd-ext-div"></div>
+                    </div>
+                </div> 
+                <!-- <img class="cd-ext-loader-big" src={{big_loader}}> -->
+            </div>                        
+        </div>
+
+        <!-- end user activity section -->
+
+    </div>
+    <!-- End notification section -->
+    <div class="cd-ext-ext-user-menu cd-ext-div cd-ext-drop-menu">
+        <div class="cd-ext-ext-user-arrow cd-ext-div"></div>
+            <a id="cdext-menu-signup" class="cd-ext-a" href="#"> LogIn/Signup </a>
+            <a id="cdext-my-account" class="cd-ext-a" href="#"> My Account </a>
+            <a id="cdext-my-price" class="cd-ext-a" href= "#"> My Price Alerts </a>
+            <a id="cdext-logout" class="cd-ext-a" href="#"> Logout </a>        
+    </div>
+    <div class="cd-ext-ext-settings-menu cd-ext-drop-menu cd-ext-div">
+            <!--<div id="cdext-settings-guest-menu">
+                <!-- TODO:  insert menu to be displayed when user is not logged in here 
+                <h1>Log in first to control preferences</h1>
+                <h1>Design yet to be integrated</h1>
+            </div> -->
+            <div id="cdext-settings-user-menu">
+                <div class="cd-ext-ext-settings-arrow cd-ext-div">
+                </div>
+                <div class="cd-ext-settings-title cd-ext-div">Notification Settings 
+                    <p class="cd-ext-p">Toggle notification for:</p>
+                </div>
+                <div class="cd-ext-setting-list-item cd-ext-div"> Coupons and Deals 
+                    <div class="cd-ext-ext-slide cd-ext-div"> 
+                        <input type="checkbox" value="None" id="cd-ext-slideOne" class="cd-ext-input" name="coupons_and_deals" />
+                        <label for="cd-ext-slideOne" class="cd-ext-label"></label>
+                    </div>
+                </div>  
+                <div class="cd-ext-setting-list-item cd-ext-div"> Cashback
+                    <div class="cd-ext-ext-slide cd-ext-div"> 
+                        <input type="checkbox" value="None" id="cd-ext-slideTwo" class="cd-ext-input" name="cashback" />
+                        <label for="cd-ext-slideTwo" class="cd-ext-label"></label>
+                    </div>
+                </div>  
+                 <div class="cd-ext-setting-list-item cd-ext-div"> Special Offers 
+                    <div class="cd-ext-ext-slide cd-ext-div"> 
+                        <input type="checkbox" value="None" id="cd-ext-slideThree" class="cd-ext-input" name="special_offers" />
+                        <label for="cd-ext-slideThree" class="cd-ext-label"></label>
+                    </div>
+                </div>  
+                <div class="cd-ext-setting-list-item cd-ext-div"> Price Comparison 
+                    <div class="cd-ext-ext-slide cd-ext-div"> 
+                        <input type="checkbox" value="None" id="cd-ext-slideFour" class="cd-ext-input" name="price_comparison" />
+                        <label for="cd-ext-slideFour" class="cd-ext-label"></label>
+                    </div>
+                </div>  
+                <div class="cd-ext-setting-list-item cd-ext-div"> Price drop alerts 
+                    <div class="cd-ext-ext-slide cd-ext-div"> 
+                        <input type="checkbox" value="None" id="cd-ext-slideFive" class="cd-ext-input" name="price_alert" />
+                        <label for="cd-ext-slideFive" class="cd-ext-label"></label>
+                    </div>
+                </div>  
+                <div class="cd-ext-setting-list-item cd-ext-div"> Coupondunia Sticker
+                    <div class="cd-ext-ext-slide cd-ext-div"> 
+                        <input type="checkbox" value="None" id="cd-ext-slideSix" class="cd-ext-input" name="show_cd_sticker" />
+                        <label for="cd-ext-slideSix" class="cd-ext-label"></label>
+                    </div>
+                </div>  
+                <!-- <div class="cd-ext-setting-list-item cd-ext-div"> Price too high button
+                    <div class="cd-ext-ext-slide cd-ext-div"> 
+                        <input type="checkbox" value="None" id="cd-ext-slideSeven" class="cd-ext-input" name="price_too_high_button" />
+                        <label for="cd-ext-slideSeven" class="cd-ext-label"></label>
+                    </div>
+                </div> -->  
+                <!-- <div class="cd-ext-setting-list-item cd-ext-div"> Similar Products 
+                    <div class="cd-ext-ext-slide cd-ext-div"> 
+                        <input type="checkbox" value="None" id="cd-ext-slideEight" class="cd-ext-input" name="similar_products" /> 
+                        <label for="cd-ext-slideEight" class="cd-ext-label"></label>
+                    </div>
+                </div>   -->
+                <!-- <div class="cd-ext-setting-list-item cd-ext-div"> Apply Coupons Button 
+                    <div class="cd-ext-ext-slide cd-ext-div"> 
+                        <input type="checkbox" value="None" id="cd-ext-slideNine" class="cd-ext-input" name="apply_coupons_button" />
+                        <label for="cd-ext-slideNine" class="cd-ext-label"></label>
+                    </div>
+                </div> -->  
+
+                <div id="cdext-save-settings" class="cd-ext-save-settings cd-ext-div">SAVE</div> 
+                <div id="cdext-cancel-settings" class="cd-ext-cancel-settings cd-ext-div">CANCEL</div>
+            </div>
+
+    </div>
+</div>

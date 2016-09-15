@@ -19,7 +19,7 @@ chrome.extension.onMessage.addListener(function(message,sender,sendResponse){
         sendResponse({type:"test","value":"hmara response valid hai"});
     }
 
-    chrome.storage.sync.set({'valueStored': message.url}, function() {
+    chrome.storage.local.set({'valueStored': message.url}, function() {
         // Notify that we saved.
         console.log('Settings saved',message.url);
     });
